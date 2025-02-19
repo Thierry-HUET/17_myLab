@@ -81,7 +81,7 @@ project:
             - file: 04_Application/02_Cyber/99_complements.md
     - file: 05_Benchmark/0500.md
       children:
-        - file: 05_Benchmark/01_loading/050100.ipynb
+        - file: 05_Benchmark/01_loading/050100.md
 
   # To autogenerate a Table of Contents, run "myst init --write-toc"
 site:
