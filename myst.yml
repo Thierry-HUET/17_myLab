@@ -1,15 +1,97 @@
 # See docs at: https://mystmd.org/guide/frontmatter
+# Ne pas oublier de déclarer BASE_URL=https://aperto-nota.fr/lab avant de compiler les pages statiques.
+# Ne pas oublier de déclarer HOST=https://lab.aperto-nota.fr avant de lancer mystmd --keep-host
 version: 1
 project:
-  id: 96810480-eea3-4c32-ac02-484d7b6a89ac
-  # title:
+  id: 31beff8b-a89c-4a28-bad1-95bc6ed0a036
+  title: Notre lab | APERTO-NOTA
+  license: CC-BY-4.0
   # description:
   # keywords: []
-  # authors: []
-  github: https://github.com/Thierry-HUET/17_myLab
+  authors: 
+    - name: Thierry HUET
+      affiliations: 
+        - APERTO-NOTA
+      email: thierry.huet@aperto-nota.fr
+  #plugins:
+  #  - type: executable
+  #    path: bin/toctree.py
+  env:
+    BASE_URL: https://lab.aperto-nota.fr
+  toc:
+    - file: Readme.md
+    - file: 01_Poste_de_travail/0100.md
+      children:
+        - file: 01_Poste_de_travail/01_ide/010100.md
+        - file: 01_Poste_de_travail/02_docker/010200.md
+        - file: 01_Poste_de_travail/03_python/010300.md
+    - file: 02_Programmation/0200.md
+      children:
+        - file: 02_Programmation/03_Cypher/020300.md
+          children:
+            - file: 02_Programmation/03_Cypher/02030100.md
+        - file: 02_Programmation/01_python/020100.md
+          children:
+            - file: 02_Programmation/01_python/02010100.md
+            - file: 02_Programmation/01_python/02010200.md
+            - file: 02_Programmation/01_python/02010300.md
+            - file: 02_Programmation/01_python/02010400.md
+            - file: 02_Programmation/01_python/02010500.md
+            - file: 02_Programmation/01_python/02010600.md
+            - file: 02_Programmation/01_python/02010700.md
+        - file: 02_Programmation/04_RPA/020400.md
+        - file: 02_Programmation/02_sql/020200.md
+          children:
+           - file: 02_Programmation/02_sql/02020100.md
+           - file: 02_Programmation/02_sql/02020200.md
+           - file: 02_Programmation/02_sql/02020300.md
+           - file: 02_Programmation/02_sql/02020400.md
+           - file: 02_Programmation/02_sql/02020500.md
+           - file: 02_Programmation/02_sql/02020600.md
+           - file: 02_Programmation/02_sql/02020700.md
+           - file: 02_Programmation/02_sql/02020800.md
+           - file: 02_Programmation/02_sql/02020900.md
+           - file: 02_Programmation/02_sql/02021000.md
+        - file: 02_Programmation/05_GraphQL/020500.md
+          children:
+           - file: 02_Programmation/05_GraphQL/02050100.md
+    - file: 03_Infrastructure/0300.md
+      children:
+        - file: 03_Infrastructure/01_docker/030100.md
+        - file: 03_Infrastructure/02_mongodb/030200.md
+    - file: 04_Application/0400.md
+      children:
+        - file: 04_Application/01_IA/040100.md
+        - file: 04_Application/02_Cyber/040200.md
+          children:
+            - file: 04_Application/02_Cyber/04020100.md
+            - file: 04_Application/02_Cyber/04020200.md
+            - file: 04_Application/02_Cyber/04020300.md
+            - file: 04_Application/02_Cyber/04020400.md
+            - file: 04_Application/02_Cyber/04020500.md
+            - file: 04_Application/02_Cyber/04020600.md
+            - file: 04_Application/02_Cyber/04020700.md
+            - file: 04_Application/02_Cyber/04020800.md
+            - file: 04_Application/02_Cyber/04020900.md
+            - file: 04_Application/02_Cyber/04021000.md
+            - file: 04_Application/02_Cyber/04021100.md
+            - file: 04_Application/02_Cyber/04021200.md
+            - file: 04_Application/02_Cyber/04021300.md
+            - file: 04_Application/02_Cyber/04029900.md
+            - file: 04_Application/02_Cyber/99_complements.md
+    - file: 05_Benchmark/0500.md
+      children:
+        - file: 05_Benchmark/01_loading/050100.ipynb
+
   # To autogenerate a Table of Contents, run "myst init --write-toc"
 site:
   template: book-theme
-  # options:
-  #   favicon: favicon.ico
-  #   logo: site_logo.png
+  options:
+     favicon: static/img/favicon.ico
+     logo: static/img/logo.png
+  nav:
+    - title: APERTO-NOTA
+      url: https://aperto-nota.fr
+  actions:
+    - title: Discord
+      url: https://discord.gg/EATq8k2Y
