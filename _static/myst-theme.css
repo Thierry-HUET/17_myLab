@@ -13,6 +13,10 @@ h2 {
   color: #069!important;
 }
 
+p {
+  text-align: justify;
+}
+
 .collapsible-content {
   font-size: 90%;
 }
