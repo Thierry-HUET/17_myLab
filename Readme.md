@@ -18,4 +18,4 @@ date: 2024-10/01
 
 Bienvenue sur ce site ! Vous y trouverez les bases essentielles de Python et SQL, ainsi que des modes opératoires pour installer des bases de données et d'autres outils. Nous vous présenterons également comment utiliser l'intelligence artificielle au quotidien pour optimiser vos tâches et améliorer votre productivité. 
 
-N'hésitez pas à nous contacter sur LinkedIn ou Discord si vous souhaitez échanger.
+N'hésitez pas à nous contacter sur **LinkedIn** ou **element** si vous souhaitez échanger.
