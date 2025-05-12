@@ -3,3 +3,8 @@
 root {
     --jp-ui-font-family: "Inter", sans-serif;
 }
+
+html {
+    font-family: "Inter", sans-serif;
+    color: #006699;
+}
