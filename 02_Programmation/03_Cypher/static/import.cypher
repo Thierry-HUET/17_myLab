@@ -29,9 +29,6 @@ UNWIND [{nom:"Afghanite", properties:{}},
 CREATE (n:Gemme{nom: row.nom}) SET n += row.properties;
 :commit
 
-
-
-
 :begin
 CREATE CONSTRAINT constraint_8f9dd393 FOR (node:Couleur) REQUIRE (node.couleur) IS UNIQUE;
 CREATE CONSTRAINT UNIQUE_IMPORT_NAME FOR (node:`UNIQUE IMPORT LABEL`) REQUIRE (node.`UNIQUE IMPORT ID`) IS UNIQUE;
