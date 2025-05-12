@@ -90,6 +90,7 @@ site:
   options:
      favicon: static/img/favicon.ico
      logo: static/img/logo.png
+     style: ./aperto.css
   nav:
     - title: APERTO-NOTA
       url: https://aperto-nota.fr
