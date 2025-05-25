@@ -2,11 +2,11 @@
 
 root {
     --jp-ui-font-family: "Inter", sans-serif;
+    --jp-ui-font-size1: 12px;
 }
 
 html {
     font-family: "Inter", sans-serif;
-    font-size: 90%;
     color: #006699;
 }
 
