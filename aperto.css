@@ -13,7 +13,8 @@ html {
 }
 
 .article {
-    font-weight: 300;
+    font-family: "QuickSand", sans-serif;
+    font-weight: 400;
     font-size: 14px;
     text-align: justify;
 }
