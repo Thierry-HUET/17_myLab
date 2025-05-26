@@ -2,7 +2,7 @@
 
 root {
     --jp-ui-font-family: "Inter", sans-serif;
-    --jp-ui-font-size: 12px;
+    --jp-code-font-size: 12px;
 }
 
 html {
@@ -12,6 +12,7 @@ html {
 
 .article {
     font-weight: 300;
+    font-size: 12px;
     text-align: justify;
 }
 
