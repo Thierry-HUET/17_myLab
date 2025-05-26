@@ -40,6 +40,8 @@ project:
             - file: 02_Programmation/01_python/02010600.md
             - file: 02_Programmation/01_python/02010700.md
         - file: 02_Programmation/06_Python_avance/020600.md
+          children:
+            - file: 02_Programmation/06_Python_avance/02060100.md
         - file: 02_Programmation/04_RPA/020400.md
         - file: 02_Programmation/02_sql/020200.md
           children:
