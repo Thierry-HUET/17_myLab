@@ -1,13 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 root {
-    --jp-ui-font-family: "Quicksand", sans-serif;
+    --jp-ui-font-family: "QuickSand", sans-serif;
     --jp-code-font-size: 13px;
     --jp-private-code-span-padding: 1px;
 }
 
 html {
-    font-family: "Quicksand", sans-serif;
+    font-family: "Inter", sans-serif;
     color: #006699;
 }
 
@@ -23,6 +24,6 @@ html {
 }
 
 .collapsible-content {
-    font-size: 85%!important;
+    font-size: %!important;
 }
 
