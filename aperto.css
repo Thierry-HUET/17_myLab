@@ -2,7 +2,7 @@
 
 root {
     --jp-ui-font-family: "Inter", sans-serif;
-    --jp-ui-font-size1: 12px;
+    --jp-ui-font-size: 12px;
 }
 
 html {
@@ -13,4 +13,9 @@ html {
 .article {
     font-weight: 300;
     text-align: justify;
+}
+
+.py-2 {
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
