@@ -51,7 +51,13 @@ project:
                 - file: 02_Programmation/06_Python_avance/02060407.md
                 - file: 02_Programmation/06_Python_avance/02060408.md
             - file: 02_Programmation/06_Python_avance/02060500.md
-
+              children:
+                - file: 02_Programmation/06_Python_avance/02060501.md
+                - file: 02_Programmation/06_Python_avance/02060502.md
+                - file: 02_Programmation/06_Python_avance/02060503.md
+                - file: 02_Programmation/06_Python_avance/02060504.md
+                - file: 02_Programmation/06_Python_avance/02060505.md
+                - file: 02_Programmation/06_Python_avance/02060506.md
         - file: 02_Programmation/04_RPA/020400.md
         - file: 02_Programmation/02_sql/020200.md
           children:
