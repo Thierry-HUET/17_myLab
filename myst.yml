@@ -6,16 +6,11 @@ project:
   id: 31beff8b-a89c-4a28-bad1-95bc6ed0a036
   title: Notre lab | APERTO-NOTA
   license: CC-BY-4.0
-  # description:
-  # keywords: []
   authors: 
     - name: Thierry HUET
       affiliations: 
         - APERTO-NOTA
       email: thierry.huet@aperto-nota.fr
-  #plugins:
-  #  - type: executable
-  #    path: bin/toctree.py
   env:
     BASE_URL: /
   toc:
@@ -45,6 +40,16 @@ project:
             - file: 02_Programmation/06_Python_avance/02060200.md
             - file: 02_Programmation/01_python/02010700.md
             - file: 02_Programmation/06_Python_avance/02060300.md
+            - file: 02_Programmation/06_Python_avance/02060400.md
+              children:
+                - file: 02_Programmation/06_Python_avance/02060401.md
+                - file: 02_Programmation/06_Python_avance/02060402.md
+                - file: 02_Programmation/06_Python_avance/02060403.md
+                - file: 02_Programmation/06_Python_avance/02060404.md
+                - file: 02_Programmation/06_Python_avance/02060405.md
+                - file: 02_Programmation/06_Python_avance/02060406.md
+                - file: 02_Programmation/06_Python_avance/02060407.md
+                - file: 02_Programmation/06_Python_avance/02060408.md
         - file: 02_Programmation/04_RPA/020400.md
         - file: 02_Programmation/02_sql/020200.md
           children:
@@ -101,5 +106,5 @@ site:
     - title: APERTO-NOTA
       url: https://aperto-nota.fr
   actions:
-    - title: Element
+    - title: Suivez moi sur Element
       url: https://matrix.to/#/%23tech-it:matrix.org
