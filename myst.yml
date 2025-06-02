@@ -67,6 +67,8 @@ project:
                 - file: 02_Programmation/06_Python_avance/02060605.md
                 - file: 02_Programmation/06_Python_avance/02060606.md
             - file: 02_Programmation/06_Python_avance/02060700.md
+              children:
+                - file: 02_Programmation/06_Python_avance/02060708.md
         - file: 02_Programmation/04_RPA/020400.md
         - file: 02_Programmation/02_sql/020200.md
           children:
