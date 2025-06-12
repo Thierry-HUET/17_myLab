@@ -68,6 +68,7 @@ project:
                 - file: 02_Programmation/06_Python_avance/02060606.md
             - file: 02_Programmation/06_Python_avance/02060700.md
               children:
+                - file: 02_Programmation/06_Python_avance/02060705.md
                 - file: 02_Programmation/06_Python_avance/02060708.md
         - file: 02_Programmation/04_RPA/020400.md
         - file: 02_Programmation/02_sql/020200.md
@@ -113,6 +114,9 @@ project:
     - file: 05_Benchmark/0500.md
       children:
         - file: 05_Benchmark/01_loading/050100.md
+    - file: 06_Abaques/0600.md
+      children:
+        - file: 06_Abaques/01_data/060100.md
 
   # To autogenerate a Table of Contents, run "myst init --write-toc"
 site:

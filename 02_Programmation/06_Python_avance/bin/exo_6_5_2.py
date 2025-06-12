@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 """Script de génération d'un PDF à partir d'un registre de navires en CSV.
 
 Télécharge un fichier CSV, filtre les navires de plus de 20 mètres,
@@ -10,6 +13,7 @@ from jinja2 import Template
 from xhtml2pdf import pisa
 from datetime import datetime
 import logging
+import pandas as pd
 
 # Configuration du journal de logs
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
@@ -72,11 +76,11 @@ def generer_html(navires):
         </tr>
         {% for navire in navires %}
         <tr>
-          <td>{{ navire.nom_bateau }}</td>
-          <td>{{ navire.immatriculation }}</td>
-          <td>{{ navire.type_navire }}</td>
+          <td>{{ navire.nom_navire }}</td>
+          <td>{{ navire.num_immat_francais }}</td>
+          <td>{{ navire.type_carburant }}</td>
           <td>{{ navire.longueur_hors_tout }}</td>
-          <td>{{ navire.port_d_attache }}</td>
+          <td>{{ navire.quartier }}</td>
         </tr>
         {% endfor %}
       </table>
@@ -101,11 +105,15 @@ def generer_pdf(html_content, output_filename):
 def main():
     """Point d'entrée principal du script."""
     url = "https://www.data.gouv.fr/fr/datasets/r/69d7461e-9849-4641-a5c6-fa90cee2f56b"
-    contenu_csv = telecharger_csv(url)
-    if contenu_csv:
-        navires = lire_csv(contenu_csv)
-        html = generer_html(navires)
-        generer_pdf(html, "navires.pdf")
+    url = 'navires.csv'
+    df = pd.read_csv(url,sep=',')
+    df['longueur_hors_tout'] = df['longueur_hors_tout'].str.replace(',', '.')
+    df['longueur_hors_tout'] = pd.to_numeric(df['longueur_hors_tout'])
+    df_new = df[df['longueur_hors_tout']>=20.0]
+    df_new = df_new[['nom_navire','num_immat_francais','type_carburant','longueur_hors_tout','quartier']]
+    df_new = df_new.to_dict('records')
+    html = generer_html(df_new)
+    generer_pdf(html, "navires.pdf")
 
 if __name__ == "__main__":
     main()
