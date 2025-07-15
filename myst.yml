@@ -71,6 +71,10 @@ project:
                 - file: 02_Programmation/06_Python_avance/02060705.md
                 - file: 02_Programmation/06_Python_avance/02060708.md
         - file: 02_Programmation/04_RPA/020400.md
+          children:
+          - file: 02_Programmation/04_RPA/02040100.md
+          - file: 02_Programmation/04_RPA/02040200.md
+          - file: 02_Programmation/04_RPA/02040300.md
         - file: 02_Programmation/02_sql/020200.md
           children:
            - file: 02_Programmation/02_sql/02020100.md
@@ -86,6 +90,7 @@ project:
         - file: 02_Programmation/05_GraphQL/020500.md
           children:
            - file: 02_Programmation/05_GraphQL/02050100.md
+        - file: 02_Programmation/07_Ada/020700.md
     - file: 03_Infrastructure/0300.md
       children:
         - file: 03_Infrastructure/01_docker/030100.md
