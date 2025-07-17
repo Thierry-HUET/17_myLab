@@ -1,0 +1,9 @@
+services:
+  mylab:
+    build: ./
+    hostname: myLab
+    ports:
+      - 3000:3000 
+    volumes:
+      - ./:/app
+    
