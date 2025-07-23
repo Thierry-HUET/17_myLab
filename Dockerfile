@@ -1,18 +1,22 @@
-#
-
 FROM python:3.13-slim
 
-# Set the working directory to /app.
+# Dépendances système minimales pour Node.js et pip
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    curl \
+    gnupg \
+    && curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
+    && apt-get install -y --no-install-recommends nodejs \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+# Répertoire de travail
 WORKDIR /app
 
-# Copy the current directory contents into the container at /app.
-COPY . /app
+# Copie des fichiers nécessaires
+COPY requirements.txt ./
+RUN pip install --no-cache-dir -r requirements.txt
 
-# Installation de nodejs
-RUN apt-get update && apt-get install -qy nodejs npm
+COPY . .
 
-# Install any needed packages specified in requirements.txt.
-RUN pip install --no-cache-dir -r requirements.txt 
-
-# Define a command for running the application.
+# Commande de démarrage
 CMD ["myst", "start"]

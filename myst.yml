@@ -1,7 +1,23 @@
 # See docs at: https://mystmd.org/guide/frontmatter
 # Ne pas oublier de déclarer BASE_URL=https://aperto-nota.fr/lab avant de compiler les pages statiques.
-# Ne pas oublier de déclarer HOST=https://lab.aperto-nota.fr avant de lancer mystmd --keep-host
+# Ne pas oublier de déclarer HOST=lab.aperto-nota.fr avant de lancer mystmd --keep-host
+
 version: 1
+
+site:
+  template: book-theme
+  options:
+     favicon: static/img/favicon.ico
+     logo: static/img/logo.png
+     style: ./aperto.css
+     analytics_google: G-GMHEG2G21W # Measurement ID or Tracking ID
+  nav:
+    - title: APERTO-NOTA
+      url: https://aperto-nota.fr
+  actions:
+    - title: Échangeons sur Element
+      url: https://matrix.to/#/#lab-aperto:matrix.org
+
 project:
   id: 31beff8b-a89c-4a28-bad1-95bc6ed0a036
   title: Notre lab | APERTO-NOTA
@@ -124,17 +140,3 @@ project:
       children:
         - file: 06_Abaques/01_data/060100.md
 
-  # To autogenerate a Table of Contents, run "myst init --write-toc"
-site:
-  template: book-theme
-  options:
-     favicon: static/img/favicon.ico
-     logo: static/img/logo.png
-     style: ./aperto.css
-     analytics_google: G-GMHEG2G21W # Measurement ID or Tracking ID
-  nav:
-    - title: APERTO-NOTA
-      url: https://aperto-nota.fr
-  actions:
-    - title: Suivez moi sur Element
-      url: https://matrix.to/#/%23tech-it:matrix.org
