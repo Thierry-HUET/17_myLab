@@ -15,7 +15,6 @@ Créer_Et_Lire_Un_Fichier_Texte_Invalide
     Should Be Equal As Strings    ${contenu}    Ceci est un contenu erroné
     Remove File    ${chemin}
 
-
 Créer_Et_Lire_Un_Fichier_Texte
     [Tags]    Valide
     [Documentation]    Test valide
@@ -26,5 +25,4 @@ Créer_Et_Lire_Un_Fichier_Texte
     ${contenu}=    Get File    ${chemin}
     Should Be Equal As Strings    ${contenu}    ${monTexte}
     Remove File    ${chemin}
-
 
