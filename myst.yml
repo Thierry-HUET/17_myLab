@@ -18,6 +18,9 @@ site:
     - title: Échangeons sur Element
       url: https://matrix.to/#/#lab-aperto:matrix.org
 
+html:
+     allowDangerousHtml: true
+     
 project:
   id: 31beff8b-a89c-4a28-bad1-95bc6ed0a036
   title: Notre lab | APERTO-NOTA
@@ -81,7 +84,6 @@ project:
                 - file: 02_Programmation/06_Python_avance/02060603.md
                 - file: 02_Programmation/06_Python_avance/02060604.md
                 - file: 02_Programmation/06_Python_avance/02060605.md
-                - file: 02_Programmation/06_Python_avance/02060606.md
             - file: 02_Programmation/06_Python_avance/02060700.md
               children:
                 - file: 02_Programmation/06_Python_avance/02060705.md
@@ -139,4 +141,3 @@ project:
     - file: 06_Abaques/0600.md
       children:
         - file: 06_Abaques/01_data/060100.md
-
