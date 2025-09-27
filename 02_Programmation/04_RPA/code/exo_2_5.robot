@@ -19,7 +19,7 @@ Connexion invalide
     Fill Text    input[name="username"]    fauxuser
     Fill Text    input[name="password"]    fauxpass
     Click    button[type="submit"]
-    Get Text    #flash    ==    Your username is invalid!
+    Get Text    .flash    ==    Your username is invalid!
     Close Browser
 
 Connexion valide
@@ -29,5 +29,5 @@ Connexion valide
     Fill Text    input[name="password"]    SuperSecretPassword!
     Click    button[type="submit"]
     Wait For URL    */secure
-    Get Text    #flash    ==    You logged into a secure area!
+    Get Text    .flash    ==    You logged into a secure area!
     Close Browser
