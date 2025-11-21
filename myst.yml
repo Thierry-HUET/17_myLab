@@ -114,6 +114,7 @@ project:
         - file: 03_Infrastructure/01_docker/030100.md
         - file: 03_Infrastructure/02_mongodb/030200.md
         - file: 03_Infrastructure/03_solr/030300.md
+        - file: 03_Infrastructure/04_admin_linux/030400.md
     - file: 04_Application/0400.md
       children:
         - file: 04_Application/01_IA/040100.md
