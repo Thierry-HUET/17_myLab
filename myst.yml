@@ -1,6 +1,7 @@
 # See docs at: https://mystmd.org/guide/frontmatter
 # Ne pas oublier de déclarer BASE_URL=https://aperto-nota.fr/lab avant de compiler les pages statiques.
 # Ne pas oublier de déclarer HOST=lab.aperto-nota.fr avant de lancer mystmd --keep-host
+# Les donnes sont hébergées sur https://
 
 version: 1
 
@@ -17,10 +18,7 @@ site:
   actions:
     - title: Échangeons sur Element
       url: https://matrix.to/#/#lab-aperto:matrix.org
-
-html:
-     allowDangerousHtml: true
-     
+  
 project:
   id: 31beff8b-a89c-4a28-bad1-95bc6ed0a036
   title: Notre lab | APERTO-NOTA
