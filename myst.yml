@@ -117,7 +117,7 @@ project:
       children:
         - file: 04_Application/01_IA/040100.md
         - file: 04_Application/02_Cyber/040200.md
-        - file: 04_Application/03_Database/040300.md
+        - file: 04_Application/03_Tests/040300.md
           children:
             - file: 04_Application/02_Cyber/04020100.md
             - file: 04_Application/02_Cyber/04020200.md
