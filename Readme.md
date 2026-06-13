@@ -13,13 +13,17 @@ exports:
   - format: pdf
     language: fr
     template: lapreprint
-date: 2024-10-01
+date: 2026-06-13
 ---
 
 ```{important}
-14/08/2025 - Le module RPA est en cours d'écriture...
+13/06/2026 - Module Redmine 5.1.12 ajouté : 19 exercices couvrant l'administration, la gestion de projet et l'usage quotidien.
 ```
 
 Bienvenue sur ce site ! Vous y trouverez les bases essentielles de Python et SQL, ainsi que des modes opératoires pour installer des bases de données et d'autres outils. Nous vous présenterons également comment utiliser l'intelligence artificielle au quotidien pour optimiser vos tâches et améliorer votre productivité. 
 
 N'hésitez pas à nous contacter sur **LinkedIn** ou **element** si vous souhaitez échanger.
+
+---
+
+**Version** : 1.5.0 — voir le [CHANGELOG](CHANGELOG.md) pour l'historique complet des évolutions.
