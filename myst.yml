@@ -20,6 +20,8 @@ site:
       url: https://matrix.to/#/#tech-it:matrix.org
   
 project:
+  plugins:
+    - fr-date.mjs
   id: 31beff8b-a89c-4a28-bad1-95bc6ed0a036
   title: Notre lab | APERTO-NOTA
   license: CC-BY-4.0
