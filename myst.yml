@@ -1,7 +1,7 @@
 # See docs at: https://mystmd.org/guide/frontmatter
 # Ne pas oublier de déclarer BASE_URL=https://aperto-nota.fr/lab avant de compiler les pages statiques.
 # Ne pas oublier de déclarer HOST=lab.aperto-nota.fr avant de lancer mystmd --keep-host
-# Les donnes sont hébergées sur https://
+# Les données sont hébergées sur https://lab.aperto-nota.fr
 
 version: 1
 
@@ -20,8 +20,6 @@ site:
       url: https://matrix.to/#/#tech-it:matrix.org
   
 project:
-  plugins:
-    - fr-date.mjs
   id: 31beff8b-a89c-4a28-bad1-95bc6ed0a036
   title: Notre lab | APERTO-NOTA
   license: CC-BY-4.0
@@ -57,7 +55,6 @@ project:
           children:
             - file: 02_Programmation/06_Python_avance/02060100.md
             - file: 02_Programmation/06_Python_avance/02060200.md
-            - file: 02_Programmation/01_python/02010700.md
             - file: 02_Programmation/06_Python_avance/02060300.md
             - file: 02_Programmation/06_Python_avance/02060400.md
               children:
@@ -90,24 +87,24 @@ project:
                 - file: 02_Programmation/06_Python_avance/02060708.md
         - file: 02_Programmation/04_RPA/020400.md
           children:
-          - file: 02_Programmation/04_RPA/02040100.md
-          - file: 02_Programmation/04_RPA/02040200.md
-          - file: 02_Programmation/04_RPA/02040300.md
+            - file: 02_Programmation/04_RPA/02040100.md
+            - file: 02_Programmation/04_RPA/02040200.md
+            - file: 02_Programmation/04_RPA/02040300.md
         - file: 02_Programmation/02_sql/020200.md
           children:
-           - file: 02_Programmation/02_sql/02020100.md
-           - file: 02_Programmation/02_sql/02020200.md
-           - file: 02_Programmation/02_sql/02020300.md
-           - file: 02_Programmation/02_sql/02020400.md
-           - file: 02_Programmation/02_sql/02020500.md
-           - file: 02_Programmation/02_sql/02020600.md
-           - file: 02_Programmation/02_sql/02020700.md
-           - file: 02_Programmation/02_sql/02020800.md
-           - file: 02_Programmation/02_sql/02020900.md
-           - file: 02_Programmation/02_sql/02021000.md
+            - file: 02_Programmation/02_sql/02020100.md
+            - file: 02_Programmation/02_sql/02020200.md
+            - file: 02_Programmation/02_sql/02020300.md
+            - file: 02_Programmation/02_sql/02020400.md
+            - file: 02_Programmation/02_sql/02020500.md
+            - file: 02_Programmation/02_sql/02020600.md
+            - file: 02_Programmation/02_sql/02020700.md
+            - file: 02_Programmation/02_sql/02020800.md
+            - file: 02_Programmation/02_sql/02020900.md
+            - file: 02_Programmation/02_sql/02021000.md
         - file: 02_Programmation/05_GraphQL/020500.md
           children:
-           - file: 02_Programmation/05_GraphQL/02050100.md
+            - file: 02_Programmation/05_GraphQL/02050100.md
         - file: 02_Programmation/07_Ada/020700.md
     - file: 03_Infrastructure/0300.md
       children:
