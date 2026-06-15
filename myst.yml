@@ -18,6 +18,8 @@ site:
   actions:
     - title: Échangeons sur Element
       url: https://matrix.to/#/#tech-it:matrix.org
+  parts:
+    navbar: navbar.md
   
 project:
   id: 31beff8b-a89c-4a28-bad1-95bc6ed0a036
@@ -112,6 +114,10 @@ project:
         - file: 03_Infrastructure/02_mongodb/030200.md
         - file: 03_Infrastructure/03_solr/030300.md
         - file: 03_Infrastructure/04_admin_linux/030400.md
+        - file: 03_Infrastructure/05_apache_camel/030500.md
+          children:
+            - file: 03_Infrastructure/05_apache_camel/03050100.md
+            - file: 03_Infrastructure/05_apache_camel/03050200.md
     - file: 04_Application/0400.md
       children:
         - file: 04_Application/01_IA/040100.md

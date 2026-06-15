@@ -17,23 +17,23 @@ help:
 	@echo "  myLab v$(VERSION) — commandes disponibles"
 	@echo ""
 	@echo "  Développement local"
-	@echo "    make dev          Lancer le serveur MyST en mode watch"
-	@echo "    make build        Compiler le site en HTML statique"
-	@echo "    make clean        Supprimer le répertoire _build"
+	@echo "    gmake dev          Lancer le serveur MyST en mode watch"
+	@echo "    gmake build        Compiler le site en HTML statique"
+	@echo "    gmake clean        Supprimer le répertoire _build"
 	@echo ""
 	@echo "  Docker"
-	@echo "    make docker-build Construire l'image Docker"
-	@echo "    make docker-run   Lancer le conteneur (port 3000)"
-	@echo "    make docker-stop  Arrêter et supprimer le conteneur"
+	@echo "    gmake docker-build Construire l'image Docker"
+	@echo "    gmake docker-run   Lancer le conteneur (port 3000)"
+	@echo "    gmake docker-stop  Arrêter et supprimer le conteneur"
 	@echo ""
 	@echo "  Git"
-	@echo "    make commit       Ajouter, committer et pousser (message auto)"
-	@echo "    make commit MSG=\"…\" Committer avec un message personnalisé"
-	@echo "    make status       Afficher l'état du dépôt"
-	@echo "    make log          Afficher les 10 derniers commits"
+	@echo "    gmake commit       Ajouter, committer et pousser (message auto)"
+	@echo "    gmake commit MSG=\"…\" Committer avec un message personnalisé"
+	@echo "    gmake status       Afficher l'état du dépôt"
+	@echo "    gmake log          Afficher les 10 derniers commits"
 	@echo ""
 	@echo "  Release"
-	@echo "    make release      Tagger la version $(VERSION) et pousser"
+	@echo "    gmake release      Tagger la version $(VERSION) et pousser"
 	@echo ""
 
 # ------------------------------------------------------------
@@ -41,11 +41,11 @@ help:
 # ------------------------------------------------------------
 .PHONY: dev
 dev:
-	myst start
+	poetry run myst start
 
 .PHONY: build
 build:
-	myst build --html
+	poetry run myst build --html
 
 .PHONY: clean
 clean:

@@ -5,6 +5,33 @@ Format : [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/) — versioning
 
 ---
 
+## [1.6.0] — 2026-06-15
+
+### Ajouté
+- Module 03_Infrastructure/05_apache_camel : intégration Apache Camel + Karavan
+  - 030500.md : index du module avec plan de navigation
+  - 03050100.md : installation via Docker (Camel, Karavan, MS-SQL, PostgreSQL) avec docker-compose.yml et scripts d'initialisation
+  - 03050200.md : route YAML de recopie MS-SQL → PostgreSQL (SELECT, Split, upsert, conversions de types, pagination)
+
+### Modifié
+- myst.yml : ajout du module 05_apache_camel dans le TOC de 03_Infrastructure
+
+---
+
+## [1.5.1] — 2026-06-15
+
+### Modifié
+- 04030100.md : suppression des références à la TMA et à Capgemini dans la page de présentation
+- 04030101.md : exercices M1 enrichis (EX-02 étendu à tous les onglets de configuration avec captures réelles), 4 exercices avancés ajoutés (workflow multi-rôles, API REST curl, import CSV, champs personnalisés), corrections dropdown ajoutées sur les 11 exercices, durées révisées
+- 04030102.md : exercices M2 enrichis (3 exercices avancés ajoutés : filtres personnalisés, roadmap/Gantt, API REST gestion de projet), corrections dropdown ajoutées sur les 6 exercices, durées révisées
+- Suppression de toutes les références à "Capgemini" et "TMA" dans les fichiers du module Redmine — remplacées par des termes génériques (`mon-projet`, `Formation Redmine`, "support et maintenance")
+
+### Corrigé
+- EX-02 M1 : champs de configuration corrigés selon l'interface réelle Redmine 5.1.12 (onglets Général, Affichage, Authentification, API, Projets, Suivi des demandes, Suivi du temps, Fichiers)
+- Doublons de frontmatter dans 04030101.md supprimés
+
+---
+
 ## [1.5.0] — 2026-06-13
 
 ### Ajouté
