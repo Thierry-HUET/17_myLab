@@ -5,6 +5,72 @@ Format : [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/) — versioning
 
 ---
 
+## [1.8.1] — 2026-06-18
+
+### Modifié — 04030102.md (M2)
+- Renumérotation complète : EX-12–EX-20 → EX-01–EX-09, labels MyST mis à jour (`redmine_m2_ex0x`) pour éviter toute collision avec M1/M3
+- Projet fil rouge renommé : `mon-projet` / `Formation Redmine` → `gestion-sinistres` / `Gestion des sinistres` / `gestion-sinistres-batch` — propagé dans toutes les solutions et commandes API
+- EX-04 (lot de demandes) : ajout de 3 voies de création — A (interface), B (import CSV avec fichier prêt et note plugin redmine_importer), C (API REST PowerShell avec appels de contrôle préalables et table de correspondance ids)
+- EX-05 (Wiki) : ajout tableau de syntaxe Markdown CommonMark (10 éléments — titres, gras, italique, listes, liens internes, tableaux, blocs de code) ; note de basculement Textile pour instances non configurées en M1
+- EX-06 (temps) : ajout voie B saisie via API (`POST /time_entries.json`) et 3 requêtes GET de consultation (projet, demande, utilisateur) ; note sur `spent_on` et absence de total calculé par l'API
+
+---
+
+## [1.8.0] — 2026-06-18
+
+### Modifié — 04030101.md (M1)
+- EX-02 : correction menu API REST + vérification fonctionnelle curl (zsh et PowerShell)
+- EX-03 : ajout statut "En attente client", mise à jour matrice workflow Développeur/Anomalie (8 statuts), remplacement référence image par matrice textuelle complète
+- EX-04 : correction séquençage (statuts avant trackers), note "Statut par défaut = Nouveau (créé à EX-03)"
+- EX-05 : refonte complète (3 rôles détaillés avec visibilité, permissions par section, table restriction par tracker)
+- EX-07 : correction chemin menu (Listes de valeurs), libellés "Actif" et "Valeur par défaut" alignés sur l'interface réelle
+- EX-08 : remplacement "En attente client" absent → présent, correction "Assistance" → "Demande de service", matrice format Depuis/Vers
+- EX-09 : ajout étape 0 (création projet via API), variantes PowerShell/zsh, table status\_id alignée sur EX-03
+
+### Ajouté — 04030101.md (M1)
+- EX-12 (avancé) : Export Redmine → Excel via n8n — workflow 7 nœuds, mise à jour fichier existant sur disque hôte via volume Docker
+
+---
+
+## [1.7.1] — 2026-06-17
+
+### Modifié
+- 04030101.md, 04030102.md, 04030103.md : alignement de tous les exercices sur le modèle de numérotation de l'exercice 1 M1
+  - Titre sorti de la directive `exercise` vers un heading `### Exercice N - Titre`
+  - Directive `::::{exercise}` sans titre inline ni `:nonumber:`
+  - Labels inchangés
+- 04030103.md : renumérotation M3 (EX-14→19 → 21→26) en continuité de M2
+- 04030103.md : ajout des 6 solutions dropdown (sol_redmine_ex21 à sol_redmine_ex26) absentes de la version initiale
+
+---
+
+## [1.7.0] — 2026-06-17
+
+### Ajouté
+- Module 03_Infrastructure/01_docker/03010101.md : refonte complète du fichier d'exercices conteneurs & images
+  - Prérequis en tête de page (Linux, réseau, terminal, WSL2)
+  - Note WSL2 pour les utilisateurs Windows (recommandation d'environnement)
+  - 13 exercices numérotés (01 à 13) avec solutions en dropdown
+  - Exercice 01 : installation Docker, explication annotée de `docker info`
+  - Exercice 02 : prise en main Docker Desktop (Windows/macOS), correspondance Desktop ↓ CLI
+  - Exercice 03 : syntaxe et aide en ligne, tableau ancienne/moderne syntaxe
+  - Exercice 04 : limiter et surveiller les ressources (Cgroups) — `--memory`, `--cpus`, OOM Killer, `docker update`
+  - Exercice 05 : isolation des processus et diagnostic (Namespaces) — `docker top`, `/proc/1/status`, `nsenter`
+  - Exercice 06 : empreinte mémoire et temps de démarrage (9 étapes, Linux uniquement pour 7–9)
+  - Exercices 07–08 : coexistence de versions, déploiement rapide (WordPress)
+  - Exercices 09–11 : cycle de vie, supervision, variables d'environnement
+  - Exercice 12 : construire une image Dockerfile, publication Docker Hub (création repository incluse)
+  - Exercice 13 : optimiser un Dockerfile + montage répertoire local pour édition `app.py` à chaud
+  - Nettoyage systématique (`docker image prune -f` + `docker volume prune -f`) dans tous les exercices
+- Répertoire `03_Infrastructure/01_docker/files/` : 7 fichiers sources pour `literalinclude`
+  - `mariadb.env`, `index.html`, `Dockerfile.nginx` (commenté), `app.py`, `Dockerfile.avant`, `Dockerfile.apres`, `requirements.txt`
+- `aperto.css` : règle CSS ajoutée pour aligner la police des dropdowns `sd-dropdown` sur le reste du contenu (14px, QuickSand)
+
+### Modifié
+- `footer.md` : mise à jour de la date à 06/2026
+
+---
+
 ## [1.6.0] — 2026-06-15
 
 ### Ajouté

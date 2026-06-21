@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 660 240"
+   font-family="Avenir, Helvetica Neue, Arial, sans-serif"
+   font-size="12"
+   version="1.1"
+   id="svg28"
+   sodipodi:docname="microservices.svg"
+   inkscape:version="1.4.4 (dcaf3e7, 2026-05-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview28"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="2.3636364"
+     inkscape:cx="313.92308"
+     inkscape:cy="136.86538"
+     inkscape:window-width="2426"
+     inkscape:window-height="1186"
+     inkscape:window-x="0"
+     inkscape:window-y="30"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg28" />
+  <defs
+     id="defs1">
+    <marker
+       id="arr"
+       markerWidth="8"
+       markerHeight="8"
+       refX="4"
+       refY="4"
+       orient="auto">
+      <path
+         d="M0,0 L0,8 L8,4 z"
+         fill="#006699"
+         id="path1" />
+    </marker>
+  </defs>
+  <text
+     x="330"
+     y="22"
+     text-anchor="middle"
+     font-size="14"
+     font-weight="600"
+     fill="#006699"
+     id="text1">Architecture microservices avec Docker</text>
+  <!-- Client -->
+  <rect
+     x="266"
+     y="36"
+     width="127"
+     height="36"
+     rx="6"
+     fill="#006699"
+     id="rect2"
+     ry="6" />
+  <text
+     x="330"
+     y="59"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-weight="600"
+     id="text2">Client / API Gateway</text>
+  <!-- Flèches vers services -->
+  <line
+     x1="230"
+     y1="72"
+     x2="115"
+     y2="110"
+     stroke="#006699"
+     stroke-width="1.5"
+     marker-end="url(#arr)"
+     id="line2" />
+  <line
+     x1="280"
+     y1="72"
+     x2="230"
+     y2="110"
+     stroke="#006699"
+     stroke-width="1.5"
+     marker-end="url(#arr)"
+     id="line3" />
+  <line
+     x1="330"
+     y1="72"
+     x2="330"
+     y2="110"
+     stroke="#006699"
+     stroke-width="1.5"
+     marker-end="url(#arr)"
+     id="line4" />
+  <line
+     x1="380"
+     y1="72"
+     x2="430"
+     y2="110"
+     stroke="#006699"
+     stroke-width="1.5"
+     marker-end="url(#arr)"
+     id="line5" />
+  <line
+     x1="430"
+     y1="72"
+     x2="545"
+     y2="110"
+     stroke="#006699"
+     stroke-width="1.5"
+     marker-end="url(#arr)"
+     id="line6" />
+  <!-- Service Auth -->
+  <!-- Service Catalogue -->
+  <!-- Service Paiement -->
+  <!-- Service Commandes -->
+  <!-- Service Notifications -->
+  <!-- Lignes vers bases -->
+  <line
+     x1="98.130493"
+     y1="160"
+     x2="98.130493"
+     y2="192"
+     stroke="#bbbbbb"
+     stroke-width="1"
+     id="line20" />
+  <line
+     x1="214.11362"
+     y1="160"
+     x2="214.11362"
+     y2="192"
+     stroke="#bbbbbb"
+     stroke-width="1"
+     id="line21" />
+  <line
+     x1="330.09674"
+     y1="160"
+     x2="330.09674"
+     y2="192"
+     stroke="#bbbbbb"
+     stroke-width="1"
+     id="line22" />
+  <line
+     x1="446.07986"
+     y1="160"
+     x2="446.07986"
+     y2="192"
+     stroke="#bbbbbb"
+     stroke-width="1"
+     id="line23" />
+  <line
+     x1="562.06299"
+     y1="160"
+     x2="562.06299"
+     y2="192"
+     stroke="#bbbbbb"
+     stroke-width="1"
+     id="line24" />
+  <!-- Bases de données -->
+  <g
+     id="g30"
+     transform="translate(7.9204979,0.67231869)">
+    <rect
+       x="40.209999"
+       y="193.01999"
+       width="100"
+       height="36"
+       rx="4"
+       fill="#f0f0f0"
+       stroke="#999999"
+       id="rect24"
+       ry="4" />
+    <text
+       x="90"
+       y="214"
+       text-anchor="middle"
+       fill="#555555"
+       font-size="10px"
+       id="text24">Redis (cache)</text>
+  </g>
+  <g
+     id="g31"
+     transform="translate(-11.356382,0.12230038)">
+    <rect
+       x="175.47"
+       y="193.57001"
+       width="100"
+       height="36"
+       rx="4"
+       fill="#f0f0f0"
+       stroke="#999999"
+       id="rect25"
+       ry="4" />
+    <text
+       x="225"
+       y="214"
+       text-anchor="middle"
+       fill="#555555"
+       font-size="10px"
+       id="text25">PostgreSQL</text>
+  </g>
+  <g
+     id="g32"
+     transform="translate(-0.08325006,1.1723187)">
+    <rect
+       x="280.17999"
+       y="192.51999"
+       width="100"
+       height="36"
+       rx="4"
+       fill="#f0f0f0"
+       stroke="#999999"
+       id="rect26"
+       ry="4" />
+    <text
+       x="330"
+       y="214"
+       text-anchor="middle"
+       fill="#555555"
+       font-size="10px"
+       id="text26">MariaDB</text>
+  </g>
+  <g
+     id="g29"
+     transform="translate(10.899873,0.03230404)">
+    <rect
+       x="385.17999"
+       y="193.66"
+       width="100"
+       height="36"
+       rx="4"
+       fill="#f0f0f0"
+       stroke="#999999"
+       id="rect27"
+       ry="4" />
+    <text
+       x="435"
+       y="214"
+       text-anchor="middle"
+       fill="#555555"
+       font-size="10px"
+       id="text27">MongoDB</text>
+  </g>
+  <g
+     id="g28"
+     transform="translate(32.062988,1.6923077)">
+    <rect
+       x="480"
+       y="192"
+       width="100"
+       height="36"
+       rx="4"
+       fill="#f0f0f0"
+       stroke="#999999"
+       id="rect28"
+       ry="4" />
+    <text
+       x="529.63501"
+       y="213.72"
+       text-anchor="middle"
+       fill="#555555"
+       font-size="10px"
+       id="text28">RabbitMQ</text>
+  </g>
+  <g
+     id="g38"
+     transform="translate(8,4)">
+    <rect
+       x="40.130497"
+       y="112"
+       width="100"
+       height="52"
+       rx="6"
+       fill="#e8f4f8"
+       stroke="#006699"
+       stroke-width="1.5"
+       id="rect6"
+       ry="6" />
+    <text
+       x="90.454491"
+       y="132"
+       text-anchor="middle"
+       fill="#006699"
+       font-weight="600"
+       id="text6">Auth</text>
+    <text
+       x="90.930496"
+       y="146"
+       text-anchor="middle"
+       fill="#444444"
+       font-size="10px"
+       id="text7">conteneur 1</text>
+    <text
+       x="90"
+       y="158"
+       text-anchor="middle"
+       fill="#888888"
+       font-size="9px"
+       id="text8">node:20</text>
+  </g>
+  <g
+     id="g37"
+     transform="translate(-10.949384,4)">
+    <rect
+       x="175.063"
+       y="112"
+       width="100"
+       height="52"
+       rx="6"
+       fill="#e8f4f8"
+       stroke="#006699"
+       stroke-width="1.5"
+       id="rect8"
+       ry="6" />
+    <text
+       x="225.08701"
+       y="132"
+       text-anchor="middle"
+       fill="#006699"
+       font-weight="600"
+       id="text9">Catalogue</text>
+    <text
+       x="225.11301"
+       y="146"
+       text-anchor="middle"
+       fill="#444444"
+       font-size="10px"
+       id="text10">conteneur 2</text>
+    <text
+       x="225"
+       y="158"
+       text-anchor="middle"
+       fill="#888888"
+       font-size="9px"
+       id="text11">python:3.12</text>
+  </g>
+  <g
+     id="g36"
+     transform="translate(1.1722431,4)">
+    <rect
+       x="278.9245"
+       y="112"
+       width="100"
+       height="52"
+       rx="6"
+       fill="#e8f4f8"
+       stroke="#006699"
+       stroke-width="1.5"
+       id="rect11"
+       ry="6" />
+    <text
+       x="328.63049"
+       y="132"
+       text-anchor="middle"
+       fill="#006699"
+       font-weight="600"
+       id="text12">Paiement</text>
+    <text
+       x="329.02951"
+       y="146"
+       text-anchor="middle"
+       fill="#444444"
+       font-size="10px"
+       id="text13">conteneur 3</text>
+    <text
+       x="330"
+       y="158"
+       text-anchor="middle"
+       fill="#888888"
+       font-size="9px"
+       id="text14">java:21</text>
+  </g>
+  <g
+     id="g35"
+     transform="translate(11.124879,4)">
+    <rect
+       x="384.95499"
+       y="112"
+       width="100"
+       height="52"
+       rx="6"
+       fill="#e8f4f8"
+       stroke="#006699"
+       stroke-width="1.5"
+       id="rect14"
+       ry="6" />
+    <text
+       x="434.89499"
+       y="132"
+       text-anchor="middle"
+       fill="#006699"
+       font-weight="600"
+       id="text15">Commandes</text>
+    <text
+       x="434.905"
+       y="146"
+       text-anchor="middle"
+       fill="#444444"
+       font-size="10px"
+       id="text16">conteneur 4</text>
+    <text
+       x="435"
+       y="158"
+       text-anchor="middle"
+       fill="#888888"
+       font-size="9px"
+       id="text17">go:1.22</text>
+  </g>
+  <g
+     id="g33"
+     transform="translate(8,4)">
+    <rect
+       x="504.06299"
+       y="112"
+       width="100"
+       height="52"
+       rx="6"
+       fill="#e8f4f8"
+       stroke="#006699"
+       stroke-width="1.5"
+       id="rect17"
+       ry="6" />
+    <text
+       x="553.77502"
+       y="132"
+       text-anchor="middle"
+       fill="#006699"
+       font-weight="600"
+       id="text18">Notifications</text>
+    <text
+       x="554.15302"
+       y="146"
+       text-anchor="middle"
+       fill="#444444"
+       font-size="10px"
+       id="text19">conteneur 5</text>
+    <text
+       x="554"
+       y="158"
+       text-anchor="middle"
+       fill="#888888"
+       font-size="9px"
+       id="text20">python:3.12</text>
+  </g>
+</svg>

@@ -16,10 +16,11 @@ site:
     - title: APERTO-NOTA
       url: https://aperto-nota.fr
   actions:
-    - title: Échangeons sur Element
+    - title: Échangeons
       url: https://matrix.to/#/#tech-it:matrix.org
   parts:
     navbar: navbar.md
+    footer: footer.md
   
 project:
   id: 31beff8b-a89c-4a28-bad1-95bc6ed0a036
@@ -111,11 +112,16 @@ project:
     - file: 03_Infrastructure/0300.md
       children:
         - file: 03_Infrastructure/01_docker/030100.md
+          children:
+            - file: 03_Infrastructure/01_docker/03010101.md
+            - file: 03_Infrastructure/01_docker/03010102.md
+            - file: 03_Infrastructure/01_docker/03010103.md
         - file: 03_Infrastructure/02_mongodb/030200.md
         - file: 03_Infrastructure/03_solr/030300.md
         - file: 03_Infrastructure/04_admin_linux/030400.md
         - file: 03_Infrastructure/05_apache_camel/030500.md
           children:
+            - file: 03_Infrastructure/05_apache_camel/03050000.md
             - file: 03_Infrastructure/05_apache_camel/03050100.md
             - file: 03_Infrastructure/05_apache_camel/03050200.md
     - file: 04_Application/0400.md

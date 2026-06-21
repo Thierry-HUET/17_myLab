@@ -1,0 +1,31 @@
+---
+title: Docker — Travaux dirigés
+short_title: TD Docker
+authors: 
+    - name: Thierry HUET
+      affiliations: 
+        - APERTO-NOTA
+      email: thierry.huet@aperto-nota.fr
+subject: Exercices
+exports: 
+  - format: pdf
+    language: fr
+    template: lapreprint
+date: 2026-06-15
+---
+
+## Présentation du parcours
+
+Ce parcours de travaux dirigés couvre la formation **XW330 — Docker, créer et administrer des conteneurs virtuels d'applications** (3 jours, 21 h).
+
+Les exercices sont organisés en trois modules correspondant aux trois journées de formation.
+
+| Module | Thèmes | Exercices |
+|--------|--------|-----------|
+| [J1 — Installation et premiers conteneurs](03010101.md) | Installation, architecture, commandes de base | EX-01 à EX-05 |
+| [J2 — Images, volumes et registries](03010102.md) | Dockerfile, volumes, persistance, registry | EX-06 à EX-10 |
+| [J3 — Réseau et orchestration](03010103.md) | Réseaux, Compose, Swarm | EX-11 à EX-14 |
+
+:::{note}
+Chaque exercice indique sa durée estimée. Les corrections sont disponibles sous chaque énoncé (menu déroulant).
+:::

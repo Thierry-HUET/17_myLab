@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 700 349.39999"
+   font-family="Avenir, 'Helvetica Neue', Arial, sans-serif"
+   font-size="12px"
+   version="1.1"
+   id="svg26"
+   sodipodi:docname="docker-vs-k8s.svg"
+   width="700"
+   height="349.39999"
+   inkscape:version="1.4.4 (dcaf3e7, 2026-05-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview26"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.3114286"
+     inkscape:cx="420.15251"
+     inkscape:cy="174.23747"
+     inkscape:window-width="2426"
+     inkscape:window-height="1186"
+     inkscape:window-x="0"
+     inkscape:window-y="30"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg26" />
+  <rect
+     width="700"
+     height="340"
+     fill="#ffffff"
+     id="rect1"
+     x="0"
+     y="0" />
+  <defs
+     id="defs2">
+    <marker
+       id="arr"
+       markerWidth="8"
+       markerHeight="8"
+       refX="4"
+       refY="4"
+       orient="auto">
+      <path
+         d="M 0,0 V 8 L 8,4 Z"
+         fill="#006699"
+         id="path1" />
+    </marker>
+    <marker
+       id="arr2"
+       markerWidth="8"
+       markerHeight="8"
+       refX="4"
+       refY="4"
+       orient="auto">
+      <path
+         d="M 0,0 V 8 L 8,4 Z"
+         fill="#888888"
+         id="path2" />
+    </marker>
+  </defs>
+  <!-- Titre -->
+  <text
+     x="350"
+     y="22"
+     text-anchor="middle"
+     font-size="14px"
+     font-weight="600"
+     fill="#006699"
+     id="text2">Docker et Kubernetes — positionnement</text>
+  <!-- ===== COUCHE DÉVELOPPEUR ===== -->
+  <rect
+     x="20"
+     y="38"
+     width="660"
+     height="66"
+     rx="6"
+     fill="#f0f7fb"
+     stroke="#b3d9e8"
+     stroke-width="1.2"
+     id="rect2"
+     ry="6" />
+  <text
+     x="36"
+     y="56"
+     font-weight="600"
+     fill="#006699"
+     font-size="11px"
+     id="text3">DÉVELOPPEUR</text>
+  <!-- Docker CLI -->
+  <rect
+     x="40"
+     y="62"
+     width="130"
+     height="32"
+     rx="4"
+     fill="#006699"
+     id="rect3"
+     ry="4" />
+  <text
+     x="105"
+     y="82"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-weight="600"
+     id="text4">Docker CLI</text>
+  <!-- Dockerfile -->
+  <rect
+     x="185"
+     y="62"
+     width="130"
+     height="32"
+     rx="4"
+     fill="#006699"
+     id="rect4"
+     ry="4" />
+  <text
+     x="250"
+     y="82"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-weight="600"
+     id="text5">Dockerfile</text>
+  <!-- docker-compose -->
+  <rect
+     x="330"
+     y="62"
+     width="160"
+     height="32"
+     rx="4"
+     fill="#006699"
+     id="rect5"
+     ry="4" />
+  <text
+     x="410"
+     y="82"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-weight="600"
+     id="text6">docker-compose.yml</text>
+  <!-- kubectl -->
+  <rect
+     x="505"
+     y="62"
+     width="160"
+     height="32"
+     rx="4"
+     fill="#444444"
+     id="rect6"
+     ry="4" />
+  <text
+     x="585"
+     y="82"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-weight="600"
+     id="text7">kubectl / Helm</text>
+  <!-- ===== COUCHE RUNTIME ===== -->
+  <rect
+     x="20"
+     y="120"
+     width="660"
+     height="66"
+     rx="6"
+     fill="#e8f4f8"
+     stroke="#006699"
+     stroke-width="1.2"
+     id="rect7"
+     ry="6" />
+  <text
+     x="36"
+     y="138"
+     font-weight="600"
+     fill="#006699"
+     font-size="11px"
+     id="text8">RUNTIME CONTENEURS</text>
+  <!-- Docker Engine -->
+  <rect
+     x="40"
+     y="144"
+     width="200"
+     height="32"
+     rx="4"
+     fill="#0080b3"
+     id="rect8"
+     ry="4" />
+  <text
+     x="140"
+     y="164"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-weight="600"
+     id="text9">Docker Engine</text>
+  <!-- Podman -->
+  <rect
+     x="255"
+     y="144"
+     width="130"
+     height="32"
+     rx="4"
+     fill="#0080b3"
+     id="rect9"
+     ry="4" />
+  <text
+     x="320"
+     y="164"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-weight="600"
+     id="text10">Podman</text>
+  <!-- containerd -->
+  <rect
+     x="400"
+     y="144"
+     width="130"
+     height="32"
+     rx="4"
+     fill="#444444"
+     id="rect10"
+     ry="4" />
+  <text
+     x="465"
+     y="164"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-weight="600"
+     id="text11">containerd</text>
+  <!-- CRI-O -->
+  <rect
+     x="545"
+     y="144"
+     width="120"
+     height="32"
+     rx="4"
+     fill="#444444"
+     id="rect11"
+     ry="4" />
+  <text
+     x="605"
+     y="164"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-weight="600"
+     id="text12">CRI-O</text>
+  <!-- ===== COUCHE ORCHESTRATION ===== -->
+  <rect
+     x="20"
+     y="202"
+     width="660"
+     height="66"
+     rx="6"
+     fill="#f5f5f5"
+     stroke="#999999"
+     stroke-width="1.2"
+     id="rect12"
+     ry="6" />
+  <text
+     x="36"
+     y="220"
+     font-weight="600"
+     fill="#555555"
+     font-size="11px"
+     id="text13">ORCHESTRATION</text>
+  <!-- Docker Swarm -->
+  <rect
+     x="40"
+     y="226"
+     width="200"
+     height="32"
+     rx="4"
+     fill="#0099cc"
+     id="rect13"
+     ry="4" />
+  <text
+     x="140"
+     y="246"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-weight="600"
+     id="text14">Docker Swarm</text>
+  <!-- Kubernetes -->
+  <rect
+     x="260"
+     y="226"
+     width="400"
+     height="32"
+     rx="4"
+     fill="#326ce5"
+     id="rect14"
+     ry="4" />
+  <text
+     x="460"
+     y="246"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-weight="600"
+     id="text15">Kubernetes (K8s)</text>
+  <!-- ===== COUCHE INFRASTRUCTURE ===== -->
+  <rect
+     x="20"
+     y="284"
+     width="660"
+     height="44"
+     rx="6"
+     fill="#e0e0e0"
+     stroke="#bbbbbb"
+     stroke-width="1.2"
+     id="rect15"
+     ry="6" />
+  <text
+     x="350"
+     y="300"
+     text-anchor="middle"
+     font-weight="600"
+     fill="#444444"
+     font-size="11px"
+     id="text16">INFRASTRUCTURE</text>
+  <text
+     x="350"
+     y="318"
+     text-anchor="middle"
+     fill="#666666"
+     font-size="10px"
+     id="text17">serveurs physiques · VMs · cloud (AWS, GCP, Azure, OVH…)</text>
+  <!-- Flèches -->
+  <line
+     x1="140"
+     y1="94"
+     x2="140"
+     y2="144"
+     stroke="#006699"
+     stroke-width="1.2"
+     marker-end="url(#arr)"
+     id="line17" />
+  <line
+     x1="250"
+     y1="94"
+     x2="250"
+     y2="144"
+     stroke="#006699"
+     stroke-width="1.2"
+     marker-end="url(#arr)"
+     id="line18" />
+  <line
+     x1="410"
+     y1="94"
+     x2="370"
+     y2="144"
+     stroke="#006699"
+     stroke-width="1.2"
+     marker-end="url(#arr)"
+     id="line19" />
+  <line
+     x1="585"
+     y1="94"
+     x2="540"
+     y2="144"
+     stroke="#888888"
+     stroke-width="1.2"
+     marker-end="url(#arr2)"
+     id="line20" />
+  <line
+     x1="140"
+     y1="176"
+     x2="140"
+     y2="226"
+     stroke="#006699"
+     stroke-width="1.2"
+     marker-end="url(#arr)"
+     id="line21" />
+  <line
+     x1="320"
+     y1="176"
+     x2="200"
+     y2="226"
+     stroke="#006699"
+     stroke-width="1.2"
+     marker-end="url(#arr)"
+     id="line22" />
+  <line
+     x1="465"
+     y1="176"
+     x2="460"
+     y2="226"
+     stroke="#888888"
+     stroke-width="1.2"
+     marker-end="url(#arr2)"
+     id="line23" />
+  <line
+     x1="350"
+     y1="268"
+     x2="350"
+     y2="284"
+     stroke="#bbbbbb"
+     stroke-width="1.2"
+     marker-end="url(#arr2)"
+     id="line24" />
+  <!-- Légende couleurs -->
+  <rect
+     x="22"
+     y="335"
+     width="12"
+     height="8"
+     fill="#006699"
+     id="rect24" />
+  <text
+     x="38"
+     y="343"
+     fill="#555555"
+     font-size="10px"
+     id="text24">Écosystème Docker</text>
+  <rect
+     x="160"
+     y="335"
+     width="12"
+     height="8"
+     fill="#326ce5"
+     id="rect25" />
+  <text
+     x="176"
+     y="343"
+     fill="#555555"
+     font-size="10px"
+     id="text25">Kubernetes</text>
+  <rect
+     x="270"
+     y="335"
+     width="12"
+     height="8"
+     fill="#444444"
+     id="rect26" />
+  <text
+     x="286"
+     y="343"
+     fill="#555555"
+     font-size="10px"
+     id="text26">Runtime bas niveau / CLI K8s</text>
+</svg>

@@ -1,0 +1,41 @@
+<svg width="100%" viewBox="0 0 680 320" role="img" xmlns="http://www.w3.org/2000/svg">
+<title>Camel vs ESB</title>
+<desc>Apache Camel comme sous-ensemble d une plateforme ESB complete.</desc>
+<defs>
+  <style>
+    .bbl{fill:#E6F1FB;stroke:#185FA5;stroke-width:0.5}.bgl{fill:#F1EFE8;stroke:#5F5E5A;stroke-width:0.5}
+    .tbl{fill:#0C447C;font-family:sans-serif;font-size:14px;font-weight:500}.sbl{fill:#185FA5;font-family:sans-serif;font-size:11px}
+    .tgl{fill:#444441;font-family:sans-serif;font-size:14px;font-weight:500}.sgl{fill:#5F5E5A;font-family:sans-serif;font-size:11px}
+    .lbl{fill:#888780;font-family:sans-serif;font-size:11px}
+  </style>
+</defs>
+<rect x="30" y="30" width="620" height="240" rx="16" fill="#F1EFE8" fill-opacity="0.18" stroke="#5F5E5A" stroke-width="0.5"/>
+<text class="tgl" x="50" y="55" dominant-baseline="central">Plateforme ESB</text>
+<rect x="50" y="72" width="295" height="178" rx="12" fill="#E6F1FB" fill-opacity="0.25" stroke="#185FA5" stroke-width="0.5"/>
+<text class="sbl" x="197" y="90" text-anchor="middle" dominant-baseline="central">Apache Camel</text>
+<rect x="66" y="102" width="120" height="44" rx="8" class="bbl"/>
+<text class="tbl" x="126" y="120" text-anchor="middle" dominant-baseline="central">Routing</text>
+<text class="sbl" x="126" y="137" text-anchor="middle" dominant-baseline="central">Aiguillage</text>
+<rect x="207" y="102" width="120" height="44" rx="8" class="bbl"/>
+<text class="tbl" x="267" y="120" text-anchor="middle" dominant-baseline="central">Transformation</text>
+<text class="sbl" x="267" y="137" text-anchor="middle" dominant-baseline="central">Formats</text>
+<rect x="66" y="164" width="261" height="44" rx="8" class="bbl"/>
+<text class="tbl" x="196" y="182" text-anchor="middle" dominant-baseline="central">300+ connecteurs</text>
+<text class="sbl" x="196" y="199" text-anchor="middle" dominant-baseline="central">JDBC REST Kafka FTP S3</text>
+<rect x="375" y="102" width="130" height="44" rx="8" class="bgl"/>
+<text class="tgl" x="440" y="120" text-anchor="middle" dominant-baseline="central">Gouvernance</text>
+<text class="sgl" x="440" y="137" text-anchor="middle" dominant-baseline="central">Catalogue SLA</text>
+<rect x="520" y="102" width="110" height="44" rx="8" class="bgl"/>
+<text class="tgl" x="575" y="120" text-anchor="middle" dominant-baseline="central">Monitoring</text>
+<text class="sgl" x="575" y="137" text-anchor="middle" dominant-baseline="central">Integre</text>
+<rect x="375" y="164" width="130" height="44" rx="8" class="bgl"/>
+<text class="tgl" x="440" y="182" text-anchor="middle" dominant-baseline="central">Registre</text>
+<text class="sgl" x="440" y="199" text-anchor="middle" dominant-baseline="central">Services</text>
+<rect x="520" y="164" width="110" height="44" rx="8" class="bgl"/>
+<text class="tgl" x="575" y="182" text-anchor="middle" dominant-baseline="central">BPM</text>
+<text class="sgl" x="575" y="199" text-anchor="middle" dominant-baseline="central">Orchestration</text>
+<rect x="50" y="285" width="12" height="12" rx="2" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+<text class="lbl" x="68" y="291" dominant-baseline="central">Couvert par Apache Camel</text>
+<rect x="260" y="285" width="12" height="12" rx="2" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+<text class="lbl" x="278" y="291" dominant-baseline="central">ESB uniquement</text>
+</svg>

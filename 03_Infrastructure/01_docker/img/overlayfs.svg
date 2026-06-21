@@ -1,0 +1,40 @@
+<svg viewBox="0 0 560 260" xmlns="http://www.w3.org/2000/svg" font-family="Avenir, Helvetica Neue, Arial, sans-serif" font-size="12">
+  <rect width="560" height="260" fill="#ffffff"/>
+
+  <text x="280" y="22" text-anchor="middle" font-size="14" font-weight="600" fill="#006699">Système de fichiers en couches (OverlayFS)</text>
+
+  <!-- Couche 5 : écriture conteneur -->
+  <rect x="80" y="40" width="400" height="36" rx="4" fill="#cce8b3" stroke="#4d9926" stroke-width="1.5"/>
+  <text x="280" y="55" text-anchor="middle" font-weight="600" fill="#2d5a1b">Couche d'écriture — conteneur (lecture/écriture)</text>
+  <text x="280" y="69" text-anchor="middle" fill="#2d5a1b" font-size="10">fichiers modifiés par l'application au runtime</text>
+
+  <line x1="280" y1="76" x2="280" y2="90" stroke="#999" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Couche 4 -->
+  <rect x="80" y="92" width="400" height="32" rx="4" fill="#b3d9e8" stroke="#006699" stroke-width="1.2"/>
+  <text x="280" y="113" text-anchor="middle" fill="#004d66">COPY app.py /app/  — image personnalisée (lecture seule)</text>
+
+  <line x1="280" y1="124" x2="280" y2="136" stroke="#999" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Couche 3 -->
+  <rect x="80" y="138" width="400" height="32" rx="4" fill="#b3d9e8" stroke="#006699" stroke-width="1.2"/>
+  <text x="280" y="159" text-anchor="middle" fill="#004d66">RUN pip install flask — dépendances installées (lecture seule)</text>
+
+  <line x1="280" y1="170" x2="280" y2="182" stroke="#999" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Couche 2 -->
+  <rect x="80" y="184" width="400" height="32" rx="4" fill="#b3d9e8" stroke="#006699" stroke-width="1.2"/>
+  <text x="280" y="205" text-anchor="middle" fill="#004d66">FROM python:3.12-alpine — image de base (lecture seule)</text>
+
+  <line x1="280" y1="216" x2="280" y2="228" stroke="#999" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Couche 1 : kernel -->
+  <rect x="80" y="230" width="400" height="24" rx="4" fill="#006699"/>
+  <text x="280" y="247" text-anchor="middle" fill="#ffffff" font-weight="600">Kernel Linux de l'hôte (partagé)</text>
+
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L0,8 L8,4 z" fill="#999"/>
+    </marker>
+  </defs>
+</svg>

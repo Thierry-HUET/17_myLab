@@ -15,11 +15,20 @@ html {
 .article {
     font-family: "QuickSand", sans-serif;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 16px;
     text-align: justify;
 }
 
 .bg-stone-200\/10 {
     background-color: #e7f7ff!important;
+}
+
+.sd-dropdown .sd-card-body,
+.sd-dropdown .sd-card-body p,
+.sd-dropdown .sd-card-body li,
+.sd-dropdown .sd-card-body code,
+.sd-dropdown .sd-card-body pre {
+    font-size: 14px;
+    font-family: "QuickSand", sans-serif;
 }
 

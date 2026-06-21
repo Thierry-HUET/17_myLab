@@ -1,0 +1,19 @@
+# Image de base : Nginx sur Alpine Linux (~5 Mo)
+# Toutes les instructions suivantes s'appliquent au-dessus de cette image
+FROM nginx:alpine
+
+# Métadonnées informatives — sans effet sur l'exécution
+LABEL maintainer="admin@mondomaine.fr"
+LABEL version="1.0"
+
+# Copie le fichier HTML depuis le contexte de build
+# vers le répertoire racine servi par Nginx dans le conteneur
+COPY index.html /usr/share/nginx/html/index.html
+
+# Déclare le port d'écoute — informatif uniquement
+# C'est l'option -p au docker run qui publie le port sur l'hôte
+EXPOSE 80
+
+# Commande exécutée au démarrage du conteneur
+# daemon off : lance Nginx en avant-plan (requis pour que Docker détecte la fin du processus)
+CMD ["nginx", "-g", "daemon off;"]
